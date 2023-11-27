@@ -1,0 +1,72 @@
+body {
+    font-family: 'Outfit', sans-serif; /* Use the Outfit font */ 
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.title-container{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#webcam-container,
+#label-container {
+    width: 48%; /* Adjust the width as needed */
+    margin-right: 4%; /* Add margin between webcam and label containers */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden; /* Optional: Hide overflow to prevent shadows from overlapping */
+    margin: 20px;
+    padding: 25px
+}
+
+#text-title {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add margin below the title */
+    font-size: 36px; /* Increased font size */
+
+}
+
+button {
+    margin-top: 10px; /* Add margin above the button */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3; /* Material Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #1565C0; /* Darker Blue on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Style the predictions with a bit of spacing */
+#label-container div {
+    margin-bottom: 8px;
+}
